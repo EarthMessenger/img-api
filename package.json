@@ -1,0 +1,17 @@
+{
+  "name": "img-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vercel dev"
+  },
+  "keywords": [
+    "svg"
+  ],
+  "author": "EarthMessenger",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
