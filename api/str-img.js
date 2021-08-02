@@ -14,7 +14,7 @@ module.exports = async (req, res) => {
 
     res.setHeader("Content-Type", "image/svg+xml");
 
-    if (url != '' && checkUrl(url)) {
+    if (url != '' && checkUrl(url)) { 
         console.log(url);
 
         axios.get(url, {
