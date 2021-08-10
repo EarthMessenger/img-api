@@ -6,9 +6,11 @@ module.exports = async (req, res) => {
         url = '',
         size = 16,
         color,
-        h = -1,
-        w = -1,
+        // h = -1,
+        // w = -1,
+        font = 'sans-serif',
     } = req.query;
+
     res.setHeader("Content-Type", "image/svg+xml");
 
     if (typeof (size) == 'string') size = parseInt(size);
@@ -27,8 +29,9 @@ module.exports = async (req, res) => {
                 str,
                 size,
                 color,
-                h,
-                w,
+                font,
+                // h,
+                // w,
             )).render());
         }).catch((__err) => {
             console.error(__err);
@@ -36,6 +39,7 @@ module.exports = async (req, res) => {
                 __err,
                 16,
                 'red',
+                'monospace',
             )).render());
         });
     }
@@ -45,6 +49,7 @@ module.exports = async (req, res) => {
             'Invalid url.',
             16,
             'red',
+            'monospace',
         )).render());
     }
 };

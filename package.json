@@ -13,8 +13,5 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1"
-  },
-  "devDependencies": {
-    "@vercel/node": "^1.11.1"
   }
 }
