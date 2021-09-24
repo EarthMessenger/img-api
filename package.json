@@ -12,6 +12,7 @@
   "author": "EarthMessenger",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "mathjax-node": "^2.1.1"
   }
 }
